@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit on Enter</title>
+</head>
+<body>
+    <form id="myForm">
+        <input type="text" id="myInput" placeholder="Type something and press Enter">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Get the input field's value
+            var inputValue = document.getElementById("myInput").value;
+            
+            // Do something with the inputValue (e.g., log it to the console)
+            console.log("Input Value: " + inputValue);
+
+            // You can also perform any other actions you need here.
+        });
+    </script>
+</body>
+</html>
